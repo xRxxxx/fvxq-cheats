@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Home</title>
+</head>
+<body>
+	<div class="titler">
+		<img class="titleimage" src="assets/images/icon.png" width="40.5" height="40.5">
+		<a class="titletext">Fvxq-Configs</a>
+	</div>
+
+	
+
+	<div class="navigation">
+		<ul>
+			<li class="list">
+
+				<a href="index.html">
+					<span class="icon">
+						<ion-icon name="home-outline"></ion-icon>
+					</span>
+					<span class="text">Home</span>
+				</a>
+			</li>
+			<li class="list" >
+				
+				<a href="cheats.html">
+					<span class="icon">
+						<ion-icon name="game-controller-outline"></ion-icon>
+					</span>
+					<span class="text">Cheats</span>
+				</a>	
+			</li>
+            <li class="list" >
+				
+				<a href="config.html">
+					<span class="icon">
+						<ion-icon name="settings-outline"></ion-icon>
+					</span>
+					<span class="text">Configs</span>
+				</a>	
+			</li>
+			<li class="list active" >
+                <div class="indicator"></div>
+				<a href="anticheats.html">
+					<span class="icon">
+						<ion-icon name="shield-half-outline"></ion-icon>
+					</span>
+					<span class="text">AntiCheats</span>
+				</a>	
+			</li>
+            <li class="list" >
+				
+				<a href="channels.html">
+					<span class="icon">
+						<ion-icon name="logo-youtube"></ion-icon>
+					</span>
+					<span class="text">Channels</span>
+				</a>	
+			</li>
+		</ul>
+	</div>
+    <li class="ac_type1">
+        <li class="ac_type2">
+            <div class="ac_box" id="minebox">
+              <img src="assets/images/minebox.png" height="40px" width="40px" class="server_icon">  <a class="server_ip">mc.Minebox.es</a>
+                <div class="ac_box_info" id="info_minebox">
+                    <br>
+                    <a><strong>AntiCheat:</strong> Verus AntiCheat
+                        <br>
+                       <strong>Games:</strong> Bedwars, Skywars and more!
+                        <br>
+                        <strong>Staff:</strong> Not Active
+                        <br>
+                        <strong>Players:</strong> 150/240
+                    </a>
+                </div>
+            </div>
+              <div class="ac_box" id="emeraldcraft">
+                <img src="assets/images/mineplay.jpg" height="40px" width="40px" class="server_icon"> <a class="server_ip">mineplay.pl</a>
+                <div class="ac_box_info" id="info_emeraldcraft">
+                    <br>
+                    <a><strong>AntiCheat:</strong> Verus AntiCheat And Spartan
+                        <br>
+                       <strong>Games:</strong> Skywars, BedWars and more!
+                        <br>
+                        <strong>Staff:</strong> Active
+                        <br>
+                        <strong>Players:</strong> 200/2500
+                    </a>
+                </div>
+            </div>
+            
+        </li>
+        <li class="ac_type2">
+            <div class="ac_box" id="hypixel">
+                <img src="assets/images/hypixel.png" height="40px" width="40px" class="server_icon"> <a class="server_ip">Hypixel.net</a>
+                <div class="ac_box_info" id="info_hypixel">
+                    <br>
+                    <a><strong>AntiCheat:</strong> WatchDog (Modified NoCheat+)
+                        <br>
+                       <strong>Games:</strong> Skywars, BedWars and more!
+                        <br>
+                        <strong>Staff:</strong> Active
+                        <br>
+                        <strong>Players:</strong> 100000/200000
+                    </a>
+                </div>
+            </div>
+            <div class="ac_box" id="mushmc">
+                <img src="assets/images/mushmc.png" height="40px" width="40px" class="server_icon"> <a class="server_ip">Mushmc.com.br</a>
+                <div class="ac_box_info" id="info_mushmc">
+                    <br>
+                    <a><strong>AntiCheat:</strong> Bad
+                        <br>
+                       <strong>Games:</strong> BedWars, SkyWars
+                        <br>
+                        <strong>Staff:</strong> Pretty Active
+                        <br>
+                        <strong>Players:</strong> 2000/5000
+                    </a>
+                </div>
+            </div>
+        </li>
+    </li>
+	<!-- <li class="boxbutton" id="boxbutton">
+		<a href="cheats.html" class="boxbutton button" id="button1">AntiCheats</a>
+	</li> -->
+	<script>
+        let minebox = document.getElementById('minebox')
+        let info_minebox = document.getElementById('info_minebox')
+
+        let emeraldcraft = document.getElementById('emeraldcraft')
+        let info_emeraldcraft = document.getElementById('info_emeraldcraft')
+        
+        let hypixel = document.getElementById('hypixel')
+        let info_hypixel = document.getElementById('info_hypixel')
+                
+        let mushmc = document.getElementById('mushmc')
+        let info_mushmc = document.getElementById('info_mushmc')
+
+        function setVisible(elementID) {
+            let element = document.getElementById(elementID)
+
+                element.style.display = "contents"
+        } 
+        function setNVisible(elementID) {
+            let element = document.getElementById(elementID)
+
+                element.style.display = "none"
+        }
+
+        minebox.addEventListener("mouseover", function(){
+            setVisible("info_minebox")
+        },false)
+        minebox.addEventListener("mouseleave", function(){
+            setNVisible("info_minebox")
+        },false)
+        info_minebox.addEventListener("mouseover", function(){
+            setVisible("info_minebox")
+        },false)
+        info_minebox.addEventListener("mouseleave", function(){
+            setNVisible("info_minebox")
+        },false)
+
+        emeraldcraft.addEventListener("mouseover", function(){
+            setVisible("info_emeraldcraft")
+        },false)
+        emeraldcraft.addEventListener("mouseleave", function(){
+            setNVisible("info_emeraldcraft")
+        },false)
+        info_emeraldcraft.addEventListener("mouseover", function(){
+            setVisible("info_emeraldcraft")
+        },false)
+        info_emeraldcraft.addEventListener("mouseleave", function(){
+            setNVisible("info_emeraldcraft")
+        },false)
+
+
+        hypixel.addEventListener("mouseover", function(){
+            setVisible("info_hypixel")
+        },false)
+        hypixel.addEventListener("mouseleave", function(){
+            setNVisible("info_hypixel")
+        },false)
+        info_hypixel.addEventListener("mouseover", function(){
+            setVisible("info_hypixel")
+        },false)
+        info_hypixel.addEventListener("mouseleave", function(){
+            setNVisible("info_hypixel")
+        },false)
+
+        mushmc.addEventListener("mouseover", function(){
+            setVisible("info_mushmc")
+        },false)
+        mushmc.addEventListener("mouseleave", function(){
+            setNVisible("info_mushmc")
+        },false)
+        info_mushmc.addEventListener("mouseover", function(){
+            setVisible("info_mushmc")
+        },false)
+        info_mushmc.addEventListener("mouseleave", function(){
+            setNVisible("info_mushmc")
+        },false)
+	// 	let button = document.getElementById('cheats')
+	// 	let menu = document.getElementById('boxbutton')
+	// 	function setVisible(elementID) {
+	// 		let element = document.getElementById(elementID);
+	// 		element.style.animation = "";
+	// 		element.style.animation = "anim .5s";
+	// 		element.style.opacity = "100%"
+	// 	}
+	// 	function setNVisible(elementID) {
+	// 		let element = document.getElementById(elementID);
+	// 		element.style.opacity = "0%"
+	// 	}
+
+		
+	// 	menu.addEventListener("mouseover", function( event ) {
+	// 		setVisible("boxbutton")	
+	// }, false);
+	// button.addEventListener("mouseover", function( event ) {
+	// 		setVisible("boxbutton")	
+	// }, false);
+	// button.addEventListener("mouseleave", function( event ) {
+	// 		setNVisible("boxbutton")	
+	// }, false);
+	// menu.addEventListener("mouseleave", function( event ) {
+	// 		setNVisible("boxbutton")	
+	// }, false);
+	</script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
